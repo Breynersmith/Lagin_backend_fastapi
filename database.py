@@ -7,6 +7,7 @@ from sqlalchemy.orm import sessionmaker
 SQLALCHEMY_DATABASE_URL = (
     "postgresql://db_login_8pok_user:HihVbRsMtBzdehPfp6pBlTLnZrNztJXU@dpg-ctca1njqf0us73bu1rtg-a/db_login_8pok"
 )
+
 # Crea una instancia del motor de la base de datos
 # connect_args={"check_same_thread": False} es necesario para SQLite en aplicaciones multihilo
 engine = create_engine(SQLALCHEMY_DATABASE_URL)
