@@ -4,7 +4,7 @@ from sqlalchemy.orm import sessionmaker
 
 import os
 
-database_dir = os.path.dirname(os.path.abspath(__file))
+database_dir = os.path.dirname(os.path.abspath(__file__))
 # URL de la base de datos para conectar a SQLite
 SQLALCHEMY_DATABASE_URL = f"sqlite:///{os.path.join(database_dir, "database.db")}" 
 
