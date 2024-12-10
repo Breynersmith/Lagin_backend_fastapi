@@ -1,9 +1,9 @@
 from fastapi import FastAPI, Depends, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy.orm import Session
-from api.database import engine, SessionLocal, Base
-from api.models import User
-from api.schemas import UserCreate, UserResponse, LoginRequest
+from database import engine, SessionLocal, Base
+from models import User
+from schemas import UserCreate, UserResponse, LoginRequest
 
 # Crea las tablas en la base de datos si no existen
 Base.metadata.create_all(bind=engine)
