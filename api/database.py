@@ -6,7 +6,7 @@ import os
 
 database_dir = os.path.dirname(os.path.abspath(__file__))
 # URL de la base de datos para conectar a SQLite
-SQLALCHEMY_DATABASE_URL = f"sqlite:///{os.path.join(database_dir, "database.db")}" 
+SQLALCHEMY_DATABASE_URL = f"sqlite:///{os.path.join(database_dir, 'database.db')}" 
 
 # Crea una instancia del motor de la base de datos
 # connect_args={"check_same_thread": False} es necesario para SQLite en aplicaciones multihilo
